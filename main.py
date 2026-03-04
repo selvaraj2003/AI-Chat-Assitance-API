@@ -8,7 +8,7 @@ Base.metadata.create_all(bind=engine)
 
 
 app = FastAPI(
-    title="Backend Chat App API",
+    title="AI Chat Assitance",
     description="JWT-secured AI chat backend using FastAPI, MySQL, and Ollama",
     version="1.0.0",
 )
@@ -33,5 +33,5 @@ app.include_router(ai_router)
 def root():
     return {
         "status": "ok",
-        "message": "AI Chat Backend is running"
+        "message": "AI Chat Assitance Backend is running"
     }

@@ -4,8 +4,7 @@ from typing import Optional
 
 class ChatRequest(BaseModel):
     prompt: str
-    model: Optional[str] = "llama3"
-    temperature: Optional[float] = 0.7
+    model: Optional[str] = ""
     session_id: Optional[str] = None
 
 
